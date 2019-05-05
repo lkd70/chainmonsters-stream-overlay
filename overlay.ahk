@@ -17,7 +17,8 @@ Wormi := 0
 Dreamcrawl := 0
 Dragonworm := 0
 
-Run, .\serve\server\node.exe .\main.js, .\serve 
+Run, .\launch.vbs, .\serve, Min
+OnExit("ExitFunc")
 
 WinGetPos, winX, winY, winWidth, WinHeight, ChainMonsters
 EncountersWidthClick:= WinX + Round(winWidth * 0.546875)
@@ -145,4 +146,16 @@ Loop {
 		Sleep, 5000
 	}
 	Sleep, 100
+}
+
+ExitFunc(ExitReason, ExitCode)
+{
+	    if ExitReason not in Logoff,Shutdown
+    {
+        MsgBox, 4, , Are you sure you want to exit?
+        IfMsgBox, No
+            return 1
+        Process, Close, cmnode.exe
+
+    }
 }

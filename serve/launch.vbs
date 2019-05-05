@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run ".\server\cmnode.exe main.js", 0
