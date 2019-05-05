@@ -30,21 +30,26 @@ const init_monsters = {
 		Count: 0,
 		View: true
 	},
-	Sapli: { Name: 'Sapli', Image: 'images/Sapli.png', Count: '0', View: true },
+	Sapli: { Name: 'Sapli', Image: 'images/Sapli.png', Count: 0, View: true },
 	Stingloreon: {
 		Name: 'Stingloreon',
 		Image: 'images/Stingloreon.png',
 		Count: 0,
 		View: true
 	},
-	Ducko: { Name: 'Ducko', Image: 'images/Ducko.png', Count: '3', View: true },
+	Ducko: { Name: 'Ducko', Image: 'images/Ducko.png', Count: 0, View: true },
 	Burbro: {
 		Name: 'Burbro',
 		Image: 'images/Burbro.png',
 		Count: 0,
 		View: true
 	},
-	Wormi: { Name: 'Wormi', Image: 'images/Wormi.png', Count: '20', View: true },
+	Wormi: {
+		Name: 'Wormi',
+		Image: 'images/Wormi.png',
+		Count: 0,
+		View: true
+	},
 	Dreamcrawl: {
 		Name: 'Dreamcrawl',
 		Image: 'images/Dreamcrawl.png',
