@@ -17,6 +17,8 @@ Wormi := 0
 Dreamcrawl := 0
 Dragonworm := 0
 
+Run, .\serve\server\node.exe .\main.js, .\serve 
+
 WinGetPos, winX, winY, winWidth, WinHeight, ChainMonsters
 EncountersWidthClick:= WinX + Round(winWidth * 0.546875)
 EncountersHeightClick:= WinY + Round(WinHeight * 0.76851852)
