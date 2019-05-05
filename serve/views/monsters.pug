@@ -1,0 +1,17 @@
+html
+    head
+        script(src='public/api.js')
+        style
+            include style.css
+    body
+        div(class="container")
+            table(class="monsters")
+                each monster, index in monsters
+                    if (monster.View === true)
+                        tr(class="monster")
+                            th
+                                img(src=monster.Image)
+                            th
+                                p=monster.Name
+                            th
+                                p(id=monster.Name)=monster.Count
