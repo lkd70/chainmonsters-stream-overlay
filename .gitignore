@@ -89,3 +89,4 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+serve/public/monsters.ini
