@@ -1,4 +1,4 @@
 @ECHO OFF
-start overlay.ahk &
+start overlay.exe &
 cd .\serve\
 start cmd /c .\server\node.exe .\main.js
