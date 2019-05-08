@@ -4,18 +4,6 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%
 CoordMode, Pixel, Screen
 
-Encounters := 0
-Unknown := 0
-Goatstick := 0
-Sapli := 0
-Stingloreon := 0
-Ducko := 0
-Burbro := 0
-Beavo := 0
-Mudcrab := 0
-Wormi := 0
-Dreamcrawl := 0
-Dragonworm := 0
 
 Run, .\launch.vbs, .\serve, Min
 OnExit("ExitFunc")
@@ -50,7 +38,7 @@ Loop {
 	; Encounter check
 	PixelGetColor, color, EncountersWidthClick, EncountersHeightClick
 	if (color == 0X2A1C00) {
-		sleep, 2000
+		sleep, 7000
 		PixelGetColor, color, EncountersWidthClick, EncountersHeightClick
 		if (color == 0X2A1C00) {
 			IniRead, Encounters, ./serve/public/monsters.ini, Encounters, Count
@@ -143,7 +131,7 @@ Loop {
 				IniWrite, %Unknown%, ./serve/public/monsters.ini, Unknown, Count
 			}
 		}
-		Sleep, 5000
+		Sleep, 12000
 	}
 	Sleep, 100
 }
