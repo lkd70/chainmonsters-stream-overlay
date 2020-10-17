@@ -144,6 +144,7 @@ ExitFunc(ExitReason, ExitCode)
         IfMsgBox, No
             return 1
         Process, Close, cmnode.exe
+	Exit
 
     }
 }
